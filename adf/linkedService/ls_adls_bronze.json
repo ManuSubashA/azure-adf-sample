@@ -1,0 +1,10 @@
+{
+	"name": "ls_adls_bronze",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://<YOUR_STORAGE_ACCOUNT>.dfs.core.windows.net/"
+		}
+	}
+}

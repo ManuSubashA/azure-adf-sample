@@ -1,0 +1,24 @@
+{
+	"name": "tr_daily_copy",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_copy_http_to_bronze",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-10-02T02:00:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
